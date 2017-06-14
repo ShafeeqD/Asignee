@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="nav-header">
+          <div class="navbar-brand">
+            <span class="head">Asignee
+            </span>
+            <span class="sub-head">Assign tasks and projects amongst yourself</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="contentWrapper">
+      <div class="container">
+        <!-- task create -->
+        <div id="createDiv" class="row">
+          <div class="col-md-12">
+            <div class="panel">
+              <div class="panel-heading">
+                <span class="panel-title">Create Tasks</span>
+              </div>
+              <div class="panel-body">
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control form-input"  id="newTaskNameInp" placeholder="Task name">
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" id="createNewTaskBtn" class="btn" name="button">
+                         <span class="glyphicon glyphicon-pencil button-icon" aria-hidden="true"></span>Create</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- task listing -->
+        <div id="taskStepsDiv" class="row">
+          <div class="col-md-12">
+            <div class="panel">
+              <div class="panel-heading">
+                <span class="panel-title">Assign Task</span>
+              </div>
+              <div class="panel-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div id="step1" class="col-md-3 task-steps-col">
+                      <header class="steps-heading">
+                        <h4 class="h4">New Task</h4>
+                      </header>
+                      <div class="empty-feedback hide">
+                        <span>No Tasks</span>
+                      </div>
+                      <div class="task"></div>
+                    </div>
+                    <div id="step2" class="col-md-3 task-steps-col">
+                      <header class="steps-heading">
+                        <h4 class="h4">Development</h4>
+                      </header>
+                      <div class="empty-feedback hide">
+                        <span>No Tasks</span>
+                      </div>
+                      <div class="task"></div>
+                    </div>
+                    <div id="step3" class="col-md-3 task-steps-col">
+                      <header class="steps-heading">
+                        <h4 class="h4">Testing</h4>
+                      </header>
+                      <div class="empty-feedback hide">
+                        <span>No Tasks</span>
+                      </div>
+                      <div class="task"></div>
+                    </div>
+                    <div id="step4" class="col-md-3 task-steps-col">
+                      <header class="steps-heading">
+                        <h4 class="h4">Completed</h4>
+                      </header>
+                      <div class="empty-feedback hide">
+                        <span>No Tasks</span>
+                      </div>
+                      <div class="task"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="feedbackMdl">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../src/js/script.js">
+
+  </script>
+</html>
